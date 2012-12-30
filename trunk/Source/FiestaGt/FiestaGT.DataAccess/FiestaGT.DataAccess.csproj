@@ -48,8 +48,10 @@
     <Compile Include="BaseDataAccess.cs" />
     <Compile Include="Entities\Guild.cs" />
     <Compile Include="Entities\Jugador.cs" />
+    <Compile Include="Entities\Premio.cs" />
     <Compile Include="GuildDataAccess.cs" />
     <Compile Include="JugadorDataAccess.cs" />
+    <Compile Include="PremioDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

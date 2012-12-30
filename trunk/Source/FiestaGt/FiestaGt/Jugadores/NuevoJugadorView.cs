@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using FiestaGT.Logic;
 using FiestaGT.Commons.Dto;
 using FiestaGT.Commons.Exceptions;
+using FiestaGt.Commons;
 
 namespace FiestaGt.Jugadores
 {
@@ -18,6 +19,8 @@ namespace FiestaGt.Jugadores
         private static JugadorLogic _jugadorLogic = new JugadorLogic();
 
         private static JugadoresView _jugadoresView;
+
+        private static Validators _validators = new Validators();
 
         public NuevoJugadorView(JugadoresView jugadoresView)
         {
@@ -74,6 +77,17 @@ namespace FiestaGt.Jugadores
             {
                 this.errorProvider.SetError(this.buttonGuardar, "ERROR: No se pudo guardar el jugador.\n" + ex.Message);
             }
+        }
+
+        private void textBoxCantAsistencias_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            _validators.SoloNumeros(e);
+        }
+
+        private void textBoxCantAsistenciasHist_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            _validators.SoloNumeros(e);
+
         }
 
     }

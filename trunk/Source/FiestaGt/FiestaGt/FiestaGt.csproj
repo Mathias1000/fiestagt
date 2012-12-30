@@ -91,6 +91,24 @@
     <Compile Include="Jugadores\NuevoJugadorView.Designer.cs">
       <DependentUpon>NuevoJugadorView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Premios\EditarPremioView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Premios\EditarPremioView.Designer.cs">
+      <DependentUpon>EditarPremioView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Premios\NuevoPremioView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Premios\NuevoPremioView.Designer.cs">
+      <DependentUpon>NuevoPremioView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Premios\PremiosView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Premios\PremiosView.Designer.cs">
+      <DependentUpon>PremiosView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FiestaGt.resx">
@@ -113,6 +131,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Jugadores\NuevoJugadorView.resx">
       <DependentUpon>NuevoJugadorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Premios\EditarPremioView.resx">
+      <DependentUpon>EditarPremioView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Premios\NuevoPremioView.resx">
+      <DependentUpon>NuevoPremioView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Premios\PremiosView.resx">
+      <DependentUpon>PremiosView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

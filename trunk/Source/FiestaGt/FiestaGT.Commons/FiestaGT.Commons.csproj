@@ -48,6 +48,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Dto\GuildDto.cs" />
     <Compile Include="Dto\JugadorDto.cs" />
+    <Compile Include="Dto\PremioDto.cs" />
     <Compile Include="Exceptions\ValidationException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using FiestaGt.Jugadores;
 using FiestaGt.Guilds;
+using FiestaGt.Premios;
 
 namespace FiestaGt
 {
@@ -33,6 +34,12 @@ namespace FiestaGt
         {
             var guildsView = new GuildsView();
             guildsView.Show();
+        }
+
+        private void buttonPremios_Click(object sender, EventArgs e)
+        {
+            var premiosView = new PremiosView();
+            premiosView.Show();
         }
     }
 }
