@@ -8,40 +8,15 @@ using FiestaGT.Commons.Dto;
 
 namespace FiestaGT.Logic
 {
-    public class GuildLogic
+    public class PremioLogic
     {
+        private static PremioDataAccess _premioDataAccess = new PremioDataAccess();
 
-        private static GuildDataAccess _guildDataAccess = new GuildDataAccess();
-
-        public List<Guild> ObtenerGuilds()
+        public List<Premio> ObtenerPremios()
         {
             try
             {
-                return _guildDataAccess.ListAll().OrderByDescending(x => x.Activo).ToList();
-            }
-            catch (Exception e)
-            {
-                throw new Exception(e.Message, e);
-            }
-        }
-
-        public List<Guild> BuscarGuilds(string buscar)
-        {
-            try
-            {
-                return _guildDataAccess.ListAll().Where(x => x.Nombre.ToLower().Contains(buscar.ToLower())).ToList();
-            }
-            catch (Exception e)
-            {
-                throw new Exception(e.Message, e);
-            }
-        }
-
-        public void CrearGuild(GuildDto dto)
-        {
-            try
-            {
-                _guildDataAccess.Insert(dto);
+                return _premioDataAccess.ListAll().OrderByDescending(x => x.Activo).ToList();
             }
             catch (Exception e)
             {
@@ -50,11 +25,23 @@ namespace FiestaGT.Logic
         }
 
 
-        public Guild ObtenerGuildById(int id)
+        public void CrearPremio(PremioDto dto)
         {
             try
             {
-                return _guildDataAccess.GetGuildById(id);
+                _premioDataAccess.Insert(dto);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message, e);
+            }
+        }
+
+        public Premio ObtenerPremioById(int id)
+        {
+            try
+            {
+                return _premioDataAccess.GetPremioById(id);
             }
             catch (Exception e)
             {
@@ -63,11 +50,23 @@ namespace FiestaGT.Logic
         }
 
 
-        public void EditarGuild(GuildDto dto)
+        public void EditarPremio(PremioDto dto)
         {
             try
             {
-                _guildDataAccess.Update(dto);
+                _premioDataAccess.Update(dto);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message, e);
+            }
+        }
+
+        public List<Premio> BuscarPremios(string buscar)
+        {
+            try
+            {
+                return _premioDataAccess.ListAll().Where(x => x.Nombre.ToLower().Contains(buscar.ToLower())).ToList();
             }
             catch (Exception e)
             {

@@ -1,6 +1,6 @@
-﻿namespace FiestaGt.Jugadores
+﻿namespace FiestaGt.Premios
 {
-    partial class JugadoresView
+    partial class PremiosView
     {
         /// <summary>
         /// Required designer variable.
@@ -33,13 +33,13 @@
             this.buttonLimpiar = new System.Windows.Forms.Button();
             this.textBoxBuscar = new System.Windows.Forms.TextBox();
             this.buttonBuscar = new System.Windows.Forms.Button();
-            this.buttonNuevo = new System.Windows.Forms.Button();
+            this.dataGridViewPremios = new System.Windows.Forms.DataGridView();
             this.buttoEditar = new System.Windows.Forms.Button();
-            this.dataGridViewJugadores = new System.Windows.Forms.DataGridView();
+            this.buttonNuevo = new System.Windows.Forms.Button();
             this.buttonCerrar = new System.Windows.Forms.Button();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewJugadores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPremios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +51,7 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(846, 86);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar";
             // 
@@ -82,45 +82,45 @@
             this.buttonBuscar.UseVisualStyleBackColor = true;
             this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
             // 
-            // buttonNuevo
+            // dataGridViewPremios
             // 
-            this.buttonNuevo.Location = new System.Drawing.Point(12, 126);
-            this.buttonNuevo.Name = "buttonNuevo";
-            this.buttonNuevo.Size = new System.Drawing.Size(75, 23);
-            this.buttonNuevo.TabIndex = 1;
-            this.buttonNuevo.Text = "Nuevo";
-            this.buttonNuevo.UseVisualStyleBackColor = true;
-            this.buttonNuevo.Click += new System.EventHandler(this.buttonNuevo_Click);
+            this.dataGridViewPremios.AllowUserToAddRows = false;
+            this.dataGridViewPremios.AllowUserToDeleteRows = false;
+            this.dataGridViewPremios.AllowUserToResizeRows = false;
+            this.dataGridViewPremios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewPremios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPremios.Location = new System.Drawing.Point(12, 153);
+            this.dataGridViewPremios.Name = "dataGridViewPremios";
+            this.dataGridViewPremios.ReadOnly = true;
+            this.dataGridViewPremios.Size = new System.Drawing.Size(846, 417);
+            this.dataGridViewPremios.TabIndex = 6;
             // 
             // buttoEditar
             // 
-            this.buttoEditar.Location = new System.Drawing.Point(93, 126);
+            this.buttoEditar.Location = new System.Drawing.Point(93, 115);
             this.buttoEditar.Name = "buttoEditar";
             this.buttoEditar.Size = new System.Drawing.Size(75, 23);
-            this.buttoEditar.TabIndex = 2;
+            this.buttoEditar.TabIndex = 5;
             this.buttoEditar.Text = "Editar";
             this.buttoEditar.UseVisualStyleBackColor = true;
             this.buttoEditar.Click += new System.EventHandler(this.buttoEditar_Click);
             // 
-            // dataGridViewJugadores
+            // buttonNuevo
             // 
-            this.dataGridViewJugadores.AllowUserToAddRows = false;
-            this.dataGridViewJugadores.AllowUserToDeleteRows = false;
-            this.dataGridViewJugadores.AllowUserToResizeRows = false;
-            this.dataGridViewJugadores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewJugadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewJugadores.Location = new System.Drawing.Point(12, 164);
-            this.dataGridViewJugadores.Name = "dataGridViewJugadores";
-            this.dataGridViewJugadores.ReadOnly = true;
-            this.dataGridViewJugadores.Size = new System.Drawing.Size(846, 417);
-            this.dataGridViewJugadores.TabIndex = 3;
+            this.buttonNuevo.Location = new System.Drawing.Point(12, 115);
+            this.buttonNuevo.Name = "buttonNuevo";
+            this.buttonNuevo.Size = new System.Drawing.Size(75, 23);
+            this.buttonNuevo.TabIndex = 4;
+            this.buttonNuevo.Text = "Nuevo";
+            this.buttonNuevo.UseVisualStyleBackColor = true;
+            this.buttonNuevo.Click += new System.EventHandler(this.buttonNuevo_Click);
             // 
             // buttonCerrar
             // 
-            this.buttonCerrar.Location = new System.Drawing.Point(396, 589);
+            this.buttonCerrar.Location = new System.Drawing.Point(407, 589);
             this.buttonCerrar.Name = "buttonCerrar";
             this.buttonCerrar.Size = new System.Drawing.Size(75, 23);
-            this.buttonCerrar.TabIndex = 4;
+            this.buttonCerrar.TabIndex = 7;
             this.buttonCerrar.Text = "Cerrar";
             this.buttonCerrar.UseVisualStyleBackColor = true;
             this.buttonCerrar.Click += new System.EventHandler(this.buttonCerrar_Click);
@@ -129,22 +129,22 @@
             // 
             this.errorProvider.ContainerControl = this;
             // 
-            // JugadoresView
+            // PremiosView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(870, 624);
             this.Controls.Add(this.buttonCerrar);
-            this.Controls.Add(this.dataGridViewJugadores);
+            this.Controls.Add(this.dataGridViewPremios);
             this.Controls.Add(this.buttoEditar);
             this.Controls.Add(this.buttonNuevo);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "JugadoresView";
-            this.Text = "Jugadores";
+            this.Name = "PremiosView";
+            this.Text = "Premios";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewJugadores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPremios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
 
@@ -153,13 +153,13 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button buttonLimpiar;
         private System.Windows.Forms.TextBox textBoxBuscar;
         private System.Windows.Forms.Button buttonBuscar;
-        private System.Windows.Forms.Button buttonNuevo;
+        private System.Windows.Forms.DataGridView dataGridViewPremios;
         private System.Windows.Forms.Button buttoEditar;
-        private System.Windows.Forms.DataGridView dataGridViewJugadores;
+        private System.Windows.Forms.Button buttonNuevo;
         private System.Windows.Forms.Button buttonCerrar;
-        private System.Windows.Forms.Button buttonLimpiar;
         private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

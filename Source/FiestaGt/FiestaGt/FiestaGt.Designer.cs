@@ -102,6 +102,7 @@
             this.buttonPremios.TabIndex = 5;
             this.buttonPremios.Text = "Premios";
             this.buttonPremios.UseVisualStyleBackColor = true;
+            this.buttonPremios.Click += new System.EventHandler(this.buttonPremios_Click);
             // 
             // buttonEntregaPremios
             // 
