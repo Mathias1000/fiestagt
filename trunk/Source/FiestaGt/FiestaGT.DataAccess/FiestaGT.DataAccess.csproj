@@ -49,10 +49,12 @@
     <Compile Include="Entities\Guild.cs" />
     <Compile Include="Entities\Jugador.cs" />
     <Compile Include="Entities\Premio.cs" />
+    <Compile Include="Entities\Torneo.cs" />
     <Compile Include="GuildDataAccess.cs" />
     <Compile Include="JugadorDataAccess.cs" />
     <Compile Include="PremioDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TorneoDataAccess.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FiestaGT.Commons\FiestaGT.Commons.csproj">
